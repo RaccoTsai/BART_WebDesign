@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>氣球模擬風險測驗</title>
+	<script>
+		function p_balloon(){
+			var canvas = document.getElementById("balloon");
+			var context = canvas.getContext("2d")
+
+			context.rect(10,10,canvas.width, canvas.height);
+			context.fillStyle = "#46C7C7";
+			context.fill();
+		}
+
+		function square(){
+			var canvas = document.getElementById("my");
+			var context = canvas.getContext("2d")
+
+			context.rect(50,50,canvas.width, canvas.height);
+			context.fillStyle = "#46C7C7";
+			context.fill();
+
+		}
+	</script>
+	<style>
+		body{
+			margin: 10px;
+			padding: 0px;
+		}
+		#myCanvas{
+			border: 1px solid #666666;
+		}
+		body{
+			margin: 10px;
+			padding: 0px;
+		}
+		#my{
+			border: 1px solid #666666;
+		}
+	</style>
+</head>
+
+
+
+<body bgcolor="#000000" onload="p_balloon(),square()">
+
+	<canvas id = "balloon" width="100" height="200"></canvas> 
+	<canvas id = "my" width="400" height="300"></canvas> 
+
+	<br> 
+
+	<input type="button" value="結算" style="width:120px;height:40px;font-size:20px;">
+	<input type="button" value="充氣" style="width:120px;height:40px;font-size:20px;">
+	
+
+</body>
+</html>

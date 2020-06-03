@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>氣球模擬風險測驗</title>
+	<style type="text/css">
+		#canvas-wrapper
+		{
+			text-align: center;
+			height: 100px;
+			margin: 200px auto 0 auto;
+			width: 300px;
+			color: #FFF;
+			position: absolute;
+		}
+		#font{
+			background: #000000;
+			color: #FFF;
+			text-align: center;
+			margin: 0；
+		}
+		#button{
+			text-align: center;
+			position: relative;
+		}
+	</style>
+
+</head>
+
+<body bgcolor="#000000";>
+
+	<div id="canvas-wrapper">
+		<canvas id="canvas" width="500" height="500">
+			Sorry! Your browser doesn't support the canvas element.
+		</canvas>
+		<script type="text/javascript" src="color-0.1.3.min.js"></script>
+		<script type="text/javascript" src="DrawBalloon.js"></script>
+	</div>
+
+	<div id="button">
+		<input type="button" value="結算" style="margin:50px;width:120px;height:40px;font-size:20px;">
+		<input type="button" value="充氣" style="margin:50px;width:120px;height:40px;font-size:20px;">
+	</div>
+	
+	<div>
+		<!--<lebel type="text" id="font" name="font1" value="測驗總分:" readonly="readonly">
+			<input type="text" id="font" name="font2" value="目前得分:" readonly="readonly">-->
+		<label id="font">目前得分:</label>
+		<input type="text" name="RecentScore" readonly="readonly" id="font">
+		<label id="font">測驗總分:</label>
+		<input type="text" name="TotalScore" readonly="readonly" id="font">
+
+	</div>
+
+</body>
+</html>
